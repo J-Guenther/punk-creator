@@ -1,20 +1,18 @@
+<div id="general">
+  <app-general [player]="player"></app-general>
+</div>
+
+<div id="role">
+  <app-role [player]="player"></app-role>
+</div>
 
 <div id="stats">
-  <input [(ngModel)]="player.abilities.int" type="number">
-  <input [(ngModel)]="player.abilities.ref" type="number">
-  <input [(ngModel)]="player.abilities.dex" type="number">
-  <input [(ngModel)]="player.abilities.tech" type="number">
-  <input [(ngModel)]="player.abilities.cool" type="number">
-  <input [(ngModel)]="player.abilities.will" type="number">
-  <input [(ngModel)]="player.abilities.luckMax" type="number">
-  <input [(ngModel)]="player.abilities.move" type="number">
-  <input [(ngModel)]="player.abilities.body" type="number">
-  <input [(ngModel)]="player.abilities.empMax" type="number">
+  <app-stats [player]="player"></app-stats>
+</div>
+
+<div id="skills">
+  <app-skills [player]="player"></app-skills>
 </div>
 
 
 
-
-
-<input [(ngModel)]="player.skills.concentration.lvl" type="number">
-<input [value]="player.skills.concentration.base" type="number">

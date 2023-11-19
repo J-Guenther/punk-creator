@@ -1,0 +1,42 @@
+<div *ngIf="player">
+  <label for="int">INT</label>
+  <input id="int" [(ngModel)]="player.abilities.int" type="number">
+  <label for="ref">REF</label>
+  <input id="ref" [(ngModel)]="player.abilities.ref" type="number">
+  <label for="dex">DEX</label>
+  <input id="dex" [(ngModel)]="player.abilities.dex" type="number">
+  <label for="tech">TECH</label>
+  <input id="tech" [(ngModel)]="player.abilities.tech" type="number">
+  <label for="cool">COOL</label>
+  <input id="cool" [(ngModel)]="player.abilities.cool" type="number">
+  <label for="will">WILL</label>
+  <input id="will" [(ngModel)]="player.abilities.will" type="number">
+  <label for="luck">LUCK</label>
+  <input id="luck" [(ngModel)]="player.abilities.luckMax" type="number">
+  <label for="move">MOVE</label>
+  <input id="move" [(ngModel)]="player.abilities.move" type="number">
+  <label for="body">BODY</label>
+  <input id="body" [(ngModel)]="player.abilities.body" type="number">
+  <label for="emp">EMP</label>
+  <input id="emp" [(ngModel)]="player.abilities.empMax" type="number">
+
+  Health
+  <label for="hpCurrent">Hit Points Current</label>
+  <input id="hpCurrent" [(ngModel)]="player.hpCurrent" type="number">
+
+  <label for="hpMax">Hit Points Max</label>
+  <input id="hpMax" [(ngModel)]="player.hpMax" type="number">
+
+  <label for="srslyWounded">Seriously Wounded</label>
+  <input id="srslyWounded" [(ngModel)]="player.srslyWounded">
+
+  <label for="criticalInjuries">Critical Injuries</label>
+  <input id="criticalInjuries" [(ngModel)]="player.criticalInjuries">
+
+  <label for="deathSaves">Death Saves</label>
+  <input id="deathSaves" [(ngModel)]="player.deathSave">
+
+  <label for="addictions">Addictions</label>
+  <input id="addictions" [(ngModel)]="player.addictions">
+
+</div>

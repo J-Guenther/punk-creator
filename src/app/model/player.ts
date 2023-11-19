@@ -2,18 +2,24 @@ import {Abilities} from "./abilities";
 import {Skills} from "./skills";
 import {BaseAbility} from "./baseAbility";
 import {Weapon} from "./weapon";
+import {Armor} from "./armor";
+import {Lifepath} from "./lifepath";
+import {CyberwareSlots} from "./cyberwareSlots";
 
 export class Player {
 
   constructor() {
     this._abilities = new Abilities();
     this._skills = new Skills(this.abilities.changeEvent);
+    this._lifepath = new Lifepath();
+    this._cyberwareSlots = new CyberwareSlots();
     this.abilities.changeEvent.subscribe(e => {
       this.updateDerivedStats(e);
     })
   }
 
   private _name: string = "";
+  private _age: string = "";
   private _role: string = "";
   private _roleAbility: string = "";
   private _roleAbilityRank: number = 0;
@@ -29,6 +35,23 @@ export class Player {
   private _abilities: Abilities;
   private _skills: Skills
   private _weapons: Weapon[] = [];
+  private _bodyArmor: Armor = {};
+  private _headArmor: Armor = {};
+  private _legArmor: Armor = {}
+  private _aliases: string = "";
+  private _currentImprovementPoints: string = "";
+  private _maxImprovementPoints: string = "";
+  private _reputation: string = "";
+  private _reputationEvents: string = "";
+  private _lifepath: Lifepath;
+  private _fashion: string = "";
+  private _housing: string = "";
+  private _rent: string = "";
+  private _lifestyle: string = "";
+  private _roleSpecificLifepath: string = "";
+  private _ammunition: string = "";
+  private _cash: string = "";
+  private _cyberwareSlots: CyberwareSlots;
 
 
   get name(): string {
@@ -151,13 +174,156 @@ export class Player {
     this._skills = value;
   }
 
-
   get weapons(): Weapon[] {
     return this._weapons;
   }
 
   set weapons(value: Weapon[]) {
     this._weapons = value;
+  }
+
+  get bodyArmor(): Armor {
+    return this._bodyArmor;
+  }
+
+  set bodyArmor(value: Armor) {
+    this._bodyArmor = value;
+  }
+
+  get headArmor(): Armor {
+    return this._headArmor;
+  }
+
+  set headArmor(value: Armor) {
+    this._headArmor = value;
+  }
+
+  get legArmor(): Armor {
+    return this._legArmor;
+  }
+
+  set legArmor(value: Armor) {
+    this._legArmor = value;
+  }
+
+  get aliases(): string {
+    return this._aliases;
+  }
+
+  set aliases(value: string) {
+    this._aliases = value;
+  }
+
+  get currentImprovementPoints(): string {
+    return this._currentImprovementPoints;
+  }
+
+  set currentImprovementPoints(value: string) {
+    this._currentImprovementPoints = value;
+  }
+
+  get maxImprovementPoints(): string {
+    return this._maxImprovementPoints;
+  }
+
+  set maxImprovementPoints(value: string) {
+    this._maxImprovementPoints = value;
+  }
+
+  get reputation(): string {
+    return this._reputation;
+  }
+
+  set reputation(value: string) {
+    this._reputation = value;
+  }
+
+  get reputationEvents(): string {
+    return this._reputationEvents;
+  }
+
+  set reputationEvents(value: string) {
+    this._reputationEvents = value;
+  }
+
+  get lifepath(): Lifepath {
+    return this._lifepath;
+  }
+
+  set lifepath(value: Lifepath) {
+    this._lifepath = value;
+  }
+
+  get fashion(): string {
+    return this._fashion;
+  }
+
+  set fashion(value: string) {
+    this._fashion = value;
+  }
+
+  get housing(): string {
+    return this._housing;
+  }
+
+  set housing(value: string) {
+    this._housing = value;
+  }
+
+  get rent(): string {
+    return this._rent;
+  }
+
+  set rent(value: string) {
+    this._rent = value;
+  }
+
+  get lifestyle(): string {
+    return this._lifestyle;
+  }
+
+  set lifestyle(value: string) {
+    this._lifestyle = value;
+  }
+
+  get roleSpecificLifepath(): string {
+    return this._roleSpecificLifepath;
+  }
+
+  set roleSpecificLifepath(value: string) {
+    this._roleSpecificLifepath = value;
+  }
+
+  get ammunition(): string {
+    return this._ammunition;
+  }
+
+  set ammunition(value: string) {
+    this._ammunition = value;
+  }
+
+  get cash(): string {
+    return this._cash;
+  }
+
+  set cash(value: string) {
+    this._cash = value;
+  }
+
+  get cyberwareSlots(): CyberwareSlots {
+    return this._cyberwareSlots;
+  }
+
+  set cyberwareSlots(value: CyberwareSlots) {
+    this._cyberwareSlots = value;
+  }
+
+  get age(): string {
+    return this._age;
+  }
+
+  set age(value: string) {
+    this._age = value;
   }
 
   private updateDerivedStats(abilityChange: { ability: BaseAbility; value: number }) {

@@ -1,0 +1,5 @@
+<div *ngIf="player">
+  <label for="concentration">Concentration</label>
+  <input id="concentration" [(ngModel)]="player.skills.concentration.lvl" type="number">
+  <input [value]="player.skills.concentration.base" type="number">
+</div>

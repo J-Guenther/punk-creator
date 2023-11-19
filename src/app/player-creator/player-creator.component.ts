@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import {PDFDocument} from "pdf-lib";
 import {FormsModule} from "@angular/forms";
 import {Player} from "../model/player";
+import {StatsComponent} from "./stats/stats.component";
+import {GeneralComponent} from "./general/general.component";
+import {RoleComponent} from "./role/role.component";
+import {SkillsComponent} from "./skills/skills.component";
 
 declare var pdfform: any;
 
 @Component({
   selector: 'app-player-creator',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, StatsComponent, GeneralComponent, RoleComponent, SkillsComponent],
   templateUrl: './player-creator.component.html',
   styleUrl: './player-creator.component.css'
 })
