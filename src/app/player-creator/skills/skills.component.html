@@ -1,5 +1,437 @@
 <div *ngIf="player">
-  <label for="concentration">Concentration</label>
-  <input id="concentration" [(ngModel)]="player.skills.concentration.lvl" type="number">
-  <input [value]="player.skills.concentration.base" type="number">
+  <div>
+    <label for="concentration">concentration</label>
+    <input id="concentration" [(ngModel)]="player.skills.concentration.lvl" type="number">
+    <input [value]="player.skills.concentration.base" type="number">
+  </div>
+
+  <div>
+    <label for="concealObject">concealObject</label>
+    <input id="concealObject" [(ngModel)]="player.skills.concealObject.lvl" type="number">
+    <input [value]="player.skills.concealObject.base" type="number">
+  </div>
+
+  <div>
+    <label for="lipReading">lipReading</label>
+    <input id="lipReading" [(ngModel)]="player.skills.lipReading.lvl" type="number">
+    <input [value]="player.skills.lipReading.base" type="number">
+  </div>
+
+  <div>
+    <label for="perception">perception</label>
+    <input id="perception" [(ngModel)]="player.skills.perception.lvl" type="number">
+    <input [value]="player.skills.perception.base" type="number">
+  </div>
+
+  <div>
+    <label for="tracking">tracking</label>
+    <input id="tracking" [(ngModel)]="player.skills.tracking.lvl" type="number">
+    <input [value]="player.skills.tracking.base" type="number">
+  </div>
+
+  <div>
+    <label for="athletics">athletics</label>
+    <input id="athletics" [(ngModel)]="player.skills.athletics.lvl" type="number">
+    <input [value]="player.skills.athletics.base" type="number">
+  </div>
+
+  <div>
+    <label for="contortionist">contortionist</label>
+    <input id="contortionist" [(ngModel)]="player.skills.contortionist.lvl" type="number">
+    <input [value]="player.skills.contortionist.base" type="number">
+  </div>
+
+  <div>
+    <label for="dance">dance</label>
+    <input id="dance" [(ngModel)]="player.skills.dance.lvl" type="number">
+    <input [value]="player.skills.dance.base" type="number">
+  </div>
+
+  <div>
+    <label for="endurance">endurance</label>
+    <input id="endurance" [(ngModel)]="player.skills.endurance.lvl" type="number">
+    <input [value]="player.skills.endurance.base" type="number">
+  </div>
+
+  <div>
+    <label for="resistTorture">resistTorture</label>
+    <input id="resistTorture" [(ngModel)]="player.skills.resistTorture.lvl" type="number">
+    <input [value]="player.skills.resistTorture.base" type="number">
+  </div>
+
+  <div>
+    <label for="stealth">stealth</label>
+    <input id="stealth" [(ngModel)]="player.skills.stealth.lvl" type="number">
+    <input [value]="player.skills.stealth.base" type="number">
+  </div>
+
+  <div>
+    <label for="driveLandVehicle">driveLandVehicle</label>
+    <input id="driveLandVehicle" [(ngModel)]="player.skills.driveLandVehicle.lvl" type="number">
+    <input [value]="player.skills.driveLandVehicle.base" type="number">
+  </div>
+
+  <div>
+    <label for="pilotAirVehicle">pilotAirVehicle</label>
+    <input id="pilotAirVehicle" [(ngModel)]="player.skills.pilotAirVehicle.lvl" type="number">
+    <input [value]="player.skills.pilotAirVehicle.base" type="number">
+  </div>
+
+  <div>
+    <label for="pilotSeaVehicle">pilotSeaVehicle</label>
+    <input id="pilotSeaVehicle" [(ngModel)]="player.skills.pilotSeaVehicle.lvl" type="number">
+    <input [value]="player.skills.pilotSeaVehicle.base" type="number">
+  </div>
+
+  <div>
+    <label for="riding">riding</label>
+    <input id="riding" [(ngModel)]="player.skills.riding.lvl" type="number">
+    <input [value]="player.skills.riding.base" type="number">
+  </div>
+
+  <div>
+    <label for="accounting">accounting</label>
+    <input id="accounting" [(ngModel)]="player.skills.accounting.lvl" type="number">
+    <input [value]="player.skills.accounting.base" type="number">
+  </div>
+
+  <div>
+    <label for="animalHandling">animalHandling</label>
+    <input id="animalHandling" [(ngModel)]="player.skills.animalHandling.lvl" type="number">
+    <input [value]="player.skills.animalHandling.base" type="number">
+  </div>
+
+  <div>
+    <label for="bureaucracy">bureaucracy</label>
+    <input id="bureaucracy" [(ngModel)]="player.skills.bureaucracy.lvl" type="number">
+    <input [value]="player.skills.bureaucracy.base" type="number">
+  </div>
+
+  <div>
+    <label for="business">business</label>
+    <input id="business" [(ngModel)]="player.skills.business.lvl" type="number">
+    <input [value]="player.skills.business.base" type="number">
+  </div>
+
+  <div>
+    <label for="composition">composition</label>
+    <input id="composition" [(ngModel)]="player.skills.composition.lvl" type="number">
+    <input [value]="player.skills.composition.base" type="number">
+  </div>
+
+  <div>
+    <label for="criminology">criminology</label>
+    <input id="criminology" [(ngModel)]="player.skills.criminology.lvl" type="number">
+    <input [value]="player.skills.criminology.base" type="number">
+  </div>
+
+  <div>
+    <label for="cryptography">cryptography</label>
+    <input id="cryptography" [(ngModel)]="player.skills.cryptography.lvl" type="number">
+    <input [value]="player.skills.cryptography.base" type="number">
+  </div>
+
+  <div>
+    <label for="deduction">deduction</label>
+    <input id="deduction" [(ngModel)]="player.skills.deduction.lvl" type="number">
+    <input [value]="player.skills.deduction.base" type="number">
+  </div>
+
+  <div>
+    <label for="education">education</label>
+    <input id="education" [(ngModel)]="player.skills.education.lvl" type="number">
+    <input [value]="player.skills.education.base" type="number">
+  </div>
+
+  <div>
+    <label for="gamble">gamble</label>
+    <input id="gamble" [(ngModel)]="player.skills.gamble.lvl" type="number">
+    <input [value]="player.skills.gamble.base" type="number">
+  </div>
+
+  <div>
+    <label for="streetslang">streetslang</label>
+    <input id="streetslang" [(ngModel)]="player.skills.streetslang.lvl" type="number">
+    <input [value]="player.skills.streetslang.base" type="number">
+  </div>
+
+  <div>
+    <label for="language2">language2</label>
+    <input id="language2" [(ngModel)]="player.skills.language2.lvl" type="number">
+    <input [value]="player.skills.language2.base" type="number">
+  </div>
+
+  <div>
+    <label for="language3">language3</label>
+    <input id="language3" [(ngModel)]="player.skills.language3.lvl" type="number">
+    <input [value]="player.skills.language3.base" type="number">
+  </div>
+
+  <div>
+    <label for="librarySearch">librarySearch</label>
+    <input id="librarySearch" [(ngModel)]="player.skills.librarySearch.lvl" type="number">
+    <input [value]="player.skills.librarySearch.base" type="number">
+  </div>
+
+  <div>
+    <label for="yourHome">yourHome</label>
+    <input id="yourHome" [(ngModel)]="player.skills.yourHome.lvl" type="number">
+    <input [value]="player.skills.yourHome.base" type="number">
+  </div>
+
+  <div>
+    <label for="localExpert2">localExpert2</label>
+    <input id="localExpert2" [(ngModel)]="player.skills.localExpert2.lvl" type="number">
+    <input [value]="player.skills.localExpert2.base" type="number">
+  </div>
+
+  <div>
+    <label for="localExpert3">localExpert3</label>
+    <input id="localExpert3" [(ngModel)]="player.skills.localExpert3.lvl" type="number">
+    <input [value]="player.skills.localExpert3.base" type="number">
+  </div>
+
+  <div>
+    <label for="science1">science1</label>
+    <input id="science1" [(ngModel)]="player.skills.science1.lvl" type="number">
+    <input [value]="player.skills.science1.base" type="number">
+  </div>
+
+  <div>
+    <label for="science2">science2</label>
+    <input id="science2" [(ngModel)]="player.skills.science2.lvl" type="number">
+    <input [value]="player.skills.science2.base" type="number">
+  </div>
+
+  <div>
+    <label for="tactics">tactics</label>
+    <input id="tactics" [(ngModel)]="player.skills.tactics.lvl" type="number">
+    <input [value]="player.skills.tactics.base" type="number">
+  </div>
+
+  <div>
+    <label for="wildernessSurvival">wildernessSurvival</label>
+    <input id="wildernessSurvival" [(ngModel)]="player.skills.wildernessSurvival.lvl" type="number">
+    <input [value]="player.skills.wildernessSurvival.base" type="number">
+  </div>
+
+  <div>
+    <label for="brawling">brawling</label>
+    <input id="brawling" [(ngModel)]="player.skills.brawling.lvl" type="number">
+    <input [value]="player.skills.brawling.base" type="number">
+  </div>
+
+  <div>
+    <label for="evasion">evasion</label>
+    <input id="evasion" [(ngModel)]="player.skills.evasion.lvl" type="number">
+    <input [value]="player.skills.evasion.base" type="number">
+  </div>
+
+  <div>
+    <label for="martialArts">martialArts</label>
+    <input id="martialArts" [(ngModel)]="player.skills.martialArts.lvl" type="number">
+    <input [value]="player.skills.martialArts.base" type="number">
+  </div>
+
+  <div>
+    <label for="meleeWeapon">meleeWeapon</label>
+    <input id="meleeWeapon" [(ngModel)]="player.skills.meleeWeapon.lvl" type="number">
+    <input [value]="player.skills.meleeWeapon.base" type="number">
+  </div>
+
+  <div>
+    <label for="acting">acting</label>
+    <input id="acting" [(ngModel)]="player.skills.acting.lvl" type="number">
+    <input [value]="player.skills.acting.base" type="number">
+  </div>
+
+  <div>
+    <label for="playInstrument1">playInstrument1</label>
+    <input id="playInstrument1" [(ngModel)]="player.skills.playInstrument1.lvl" type="number">
+    <input [value]="player.skills.playInstrument1.base" type="number">
+  </div>
+
+  <div>
+    <label for="playInstrument2">playInstrument2</label>
+    <input id="playInstrument2" [(ngModel)]="player.skills.playInstrument2.lvl" type="number">
+    <input [value]="player.skills.playInstrument2.base" type="number">
+  </div>
+
+  <div>
+    <label for="archery">archery</label>
+    <input id="archery" [(ngModel)]="player.skills.archery.lvl" type="number">
+    <input [value]="player.skills.archery.base" type="number">
+  </div>
+
+  <div>
+    <label for="autofire">autofire</label>
+    <input id="autofire" [(ngModel)]="player.skills.autofire.lvl" type="number">
+    <input [value]="player.skills.autofire.base" type="number">
+  </div>
+
+  <div>
+    <label for="handgun">handgun</label>
+    <input id="handgun" [(ngModel)]="player.skills.handgun.lvl" type="number">
+    <input [value]="player.skills.handgun.base" type="number">
+  </div>
+
+  <div>
+    <label for="heavyWeapons">heavyWeapons</label>
+    <input id="heavyWeapons" [(ngModel)]="player.skills.heavyWeapons.lvl" type="number">
+    <input [value]="player.skills.heavyWeapons.base" type="number">
+  </div>
+
+  <div>
+    <label for="shoulderArms">shoulderArms</label>
+    <input id="shoulderArms" [(ngModel)]="player.skills.shoulderArms.lvl" type="number">
+    <input [value]="player.skills.shoulderArms.base" type="number">
+  </div>
+
+  <div>
+    <label for="bribery">bribery</label>
+    <input id="bribery" [(ngModel)]="player.skills.bribery.lvl" type="number">
+    <input [value]="player.skills.bribery.base" type="number">
+  </div>
+
+  <div>
+    <label for="conversation">conversation</label>
+    <input id="conversation" [(ngModel)]="player.skills.conversation.lvl" type="number">
+    <input [value]="player.skills.conversation.base" type="number">
+  </div>
+
+  <div>
+    <label for="humanPerception">humanPerception</label>
+    <input id="humanPerception" [(ngModel)]="player.skills.humanPerception.lvl" type="number">
+    <input [value]="player.skills.humanPerception.base" type="number">
+  </div>
+
+  <div>
+    <label for="interrogation">interrogation</label>
+    <input id="interrogation" [(ngModel)]="player.skills.interrogation.lvl" type="number">
+    <input [value]="player.skills.interrogation.base" type="number">
+  </div>
+
+  <div>
+    <label for="persuasion">persuasion</label>
+    <input id="persuasion" [(ngModel)]="player.skills.persuasion.lvl" type="number">
+    <input [value]="player.skills.persuasion.base" type="number">
+  </div>
+
+  <div>
+    <label for="personalGrooming">personalGrooming</label>
+    <input id="personalGrooming" [(ngModel)]="player.skills.personalGrooming.lvl" type="number">
+    <input [value]="player.skills.personalGrooming.base" type="number">
+  </div>
+
+  <div>
+    <label for="streetwise">streetwise</label>
+    <input id="streetwise" [(ngModel)]="player.skills.streetwise.lvl" type="number">
+    <input [value]="player.skills.streetwise.base" type="number">
+  </div>
+
+  <div>
+    <label for="trading">trading</label>
+    <input id="trading" [(ngModel)]="player.skills.trading.lvl" type="number">
+    <input [value]="player.skills.trading.base" type="number">
+  </div>
+
+  <div>
+    <label for="wardrobe">wardrobe</label>
+    <input id="wardrobe" [(ngModel)]="player.skills.wardrobe.lvl" type="number">
+    <input [value]="player.skills.wardrobe.base" type="number">
+  </div>
+
+  <div>
+    <label for="airVehicleTech">airVehicleTech</label>
+    <input id="airVehicleTech" [(ngModel)]="player.skills.airVehicleTech.lvl" type="number">
+    <input [value]="player.skills.airVehicleTech.base" type="number">
+  </div>
+
+  <div>
+    <label for="basicTech">basicTech</label>
+    <input id="basicTech" [(ngModel)]="player.skills.basicTech.lvl" type="number">
+    <input [value]="player.skills.basicTech.base" type="number">
+  </div>
+
+  <div>
+    <label for="cyberTech">cyberTech</label>
+    <input id="cyberTech" [(ngModel)]="player.skills.cyberTech.lvl" type="number">
+    <input [value]="player.skills.cyberTech.base" type="number">
+  </div>
+
+  <div>
+    <label for="demolitions">demolitions</label>
+    <input id="demolitions" [(ngModel)]="player.skills.demolitions.lvl" type="number">
+    <input [value]="player.skills.demolitions.base" type="number">
+  </div>
+
+  <div>
+    <label for="electronics">electronics</label>
+    <input id="electronics" [(ngModel)]="player.skills.electronics.lvl" type="number">
+    <input [value]="player.skills.electronics.base" type="number">
+  </div>
+
+  <div>
+    <label for="firstAid">firstAid</label>
+    <input id="firstAid" [(ngModel)]="player.skills.firstAid.lvl" type="number">
+    <input [value]="player.skills.firstAid.base" type="number">
+  </div>
+
+  <div>
+    <label for="forgery">forgery</label>
+    <input id="forgery" [(ngModel)]="player.skills.forgery.lvl" type="number">
+    <input [value]="player.skills.forgery.base" type="number">
+  </div>
+
+  <div>
+    <label for="landVehicleTech">landVehicleTech</label>
+    <input id="landVehicleTech" [(ngModel)]="player.skills.landVehicleTech.lvl" type="number">
+    <input [value]="player.skills.landVehicleTech.base" type="number">
+  </div>
+
+  <div>
+    <label for="paintDrawSculpt">paintDrawSculpt</label>
+    <input id="paintDrawSculpt" [(ngModel)]="player.skills.paintDrawSculpt.lvl" type="number">
+    <input [value]="player.skills.paintDrawSculpt.base" type="number">
+  </div>
+
+  <div>
+    <label for="paramedic">paramedic</label>
+    <input id="paramedic" [(ngModel)]="player.skills.paramedic.lvl" type="number">
+    <input [value]="player.skills.paramedic.base" type="number">
+  </div>
+
+  <div>
+    <label for="photographyFilm">photographyFilm</label>
+    <input id="photographyFilm" [(ngModel)]="player.skills.photographyFilm.lvl" type="number">
+    <input [value]="player.skills.photographyFilm.base" type="number">
+  </div>
+
+  <div>
+    <label for="pickLock">pickLock</label>
+    <input id="pickLock" [(ngModel)]="player.skills.pickLock.lvl" type="number">
+    <input [value]="player.skills.pickLock.base" type="number">
+  </div>
+
+  <div>
+    <label for="pickPocket">pickPocket</label>
+    <input id="pickPocket" [(ngModel)]="player.skills.pickPocket.lvl" type="number">
+    <input [value]="player.skills.pickPocket.base" type="number">
+  </div>
+
+  <div>
+    <label for="seaVehicleTech">seaVehicleTech</label>
+    <input id="seaVehicleTech" [(ngModel)]="player.skills.seaVehicleTech.lvl" type="number">
+    <input [value]="player.skills.seaVehicleTech.base" type="number">
+  </div>
+
+  <div>
+    <label for="weaponstech">weaponstech</label>
+    <input id="weaponstech" [(ngModel)]="player.skills.weaponstech.lvl" type="number">
+    <input [value]="player.skills.weaponstech.base" type="number">
+  </div>
+
+
+
+
 </div>

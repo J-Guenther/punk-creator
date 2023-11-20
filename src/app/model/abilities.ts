@@ -128,6 +128,7 @@ export class Abilities {
 
   set empMax(value: number) {
     this._empMax = value;
+    this._changeEvent.emit({ability: BaseAbility.EMP, value});
   }
 
 

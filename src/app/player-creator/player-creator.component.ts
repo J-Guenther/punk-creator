@@ -7,6 +7,7 @@ import {StatsComponent} from "./stats/stats.component";
 import {GeneralComponent} from "./general/general.component";
 import {RoleComponent} from "./role/role.component";
 import {SkillsComponent} from "./skills/skills.component";
+import {PlayerStepperService} from "../services/player-stepper.service";
 
 declare var pdfform: any;
 
@@ -20,6 +21,9 @@ declare var pdfform: any;
 export class PlayerCreatorComponent {
 
   player: Player = new Player();
+
+  constructor(public playerStepperService: PlayerStepperService) {
+  }
 
 
   async downloadPdf() {

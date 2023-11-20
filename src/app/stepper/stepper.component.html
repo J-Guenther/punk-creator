@@ -1,0 +1,3 @@
+<button *ngFor="let step of playerStepperService.steps; let i = index"
+        (click)="playerStepperService.setActiveStep(i)"
+        [ngClass]="{'activeStep': i === playerStepperService.activeStep}">{{step.name}}</button>
