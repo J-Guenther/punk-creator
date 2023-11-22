@@ -13,6 +13,9 @@ export class Player {
     this._skills = new Skills(this.abilities.changeEvent);
     this._lifepath = new Lifepath();
     this._cyberwareSlots = new CyberwareSlots();
+    this._headArmor = new Armor("head");
+    this._bodyArmor = new Armor("body");
+    this._shieldArmor = new Armor("leg");
     this.abilities.changeEvent.subscribe(e => {
       this.updateDerivedStats(e);
     })
@@ -35,9 +38,9 @@ export class Player {
   private _abilities: Abilities;
   private _skills: Skills
   private _weapons: Weapon[] = [];
-  private _bodyArmor: Armor = {};
-  private _headArmor: Armor = {};
-  private _legArmor: Armor = {}
+  private _bodyArmor: Armor;
+  private _headArmor: Armor;
+  private _shieldArmor: Armor;
   private _aliases: string = "";
   private _currentImprovementPoints: string = "";
   private _maxImprovementPoints: string = "";
@@ -198,12 +201,12 @@ export class Player {
     this._headArmor = value;
   }
 
-  get legArmor(): Armor {
-    return this._legArmor;
+  get shieldArmor(): Armor {
+    return this._shieldArmor;
   }
 
-  set legArmor(value: Armor) {
-    this._legArmor = value;
+  set shieldArmor(value: Armor) {
+    this._shieldArmor = value;
   }
 
   get aliases(): string {

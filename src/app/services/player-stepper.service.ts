@@ -14,6 +14,7 @@ export class PlayerStepperService {
       {name: "Role", id: "role"},
       {name: "Stats", id: "stats"},
       {name: "Skills", id: "skills"},
+      {name: "Weapons and Armor", id: "weaponsArmor"},
     ]
   }
 

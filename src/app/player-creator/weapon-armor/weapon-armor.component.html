@@ -1,0 +1,42 @@
+<h3>Armor</h3>
+<div *ngIf="player">
+  Head
+  <label for="headArmorName">Name</label>
+  <input [(ngModel)]="player.headArmor.name" id="headArmorName">
+
+  <label for="headArmorPenalty">Penalty</label>
+  <input [(ngModel)]="player.headArmor.penalty" id="headArmorPenalty">
+
+  <label for="headArmorSp">Stopping Power</label>
+  <input [(ngModel)]="player.headArmor.stoppingPower" id="headArmorSp">
+
+  <label for="headArmorNotes">Notes</label>
+  <input [(ngModel)]="player.headArmor.description" id="headArmorNotes">
+
+  Body
+  <label for="bodyArmorName">Name</label>
+  <input [(ngModel)]="player.bodyArmor.name" id="bodyArmorName">
+
+  <label for="bodyArmorPenalty">Penalty</label>
+  <input [(ngModel)]="player.bodyArmor.penalty" id="bodyArmorPenalty">
+
+  <label for="bodyArmorSp">Stopping Power</label>
+  <input [(ngModel)]="player.bodyArmor.stoppingPower" id="bodyArmorSp">
+
+  <label for="bodyArmorNotes">Notes</label>
+  <input [(ngModel)]="player.bodyArmor.description" id="bodyArmorNotes">
+
+  Shield
+  <label for="shieldArmorName">Name</label>
+  <input [(ngModel)]="player.shieldArmor.name" id="shieldArmorName">
+
+  <label for="shieldArmorPenalty">Penalty</label>
+  <input [(ngModel)]="player.shieldArmor.penalty" id="shieldArmorPenalty">
+
+  <label for="shieldArmorSp">Stopping Power</label>
+  <input [(ngModel)]="player.shieldArmor.stoppingPower" id="shieldArmorSp">
+
+  <label for="shieldArmorNotes">Notes</label>
+  <input [(ngModel)]="player.shieldArmor.description" id="shieldArmorNotes">
+</div>
+

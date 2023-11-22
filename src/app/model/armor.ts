@@ -1,7 +1,13 @@
-export interface Armor {
-  armorType?: string;
-  armorDescription?: string;
-  stoppingPower?: string;
-  armorPenalty?: string;
-  cost?: string;
+export class Armor {
+
+  constructor(armorType: string) {
+    this.armorType = armorType;
+  }
+
+  armorType: string = "";
+  name: string = "";
+  description: string = "";
+  stoppingPower: string = "";
+  penalty: string = "";
+  cost: string = "";
 }

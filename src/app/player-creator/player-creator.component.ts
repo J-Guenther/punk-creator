@@ -8,13 +8,14 @@ import {GeneralComponent} from "./general/general.component";
 import {RoleComponent} from "./role/role.component";
 import {SkillsComponent} from "./skills/skills.component";
 import {PlayerStepperService} from "../services/player-stepper.service";
+import {WeaponArmorComponent} from "./weapon-armor/weapon-armor.component";
 
 declare var pdfform: any;
 
 @Component({
   selector: 'app-player-creator',
   standalone: true,
-  imports: [CommonModule, FormsModule, StatsComponent, GeneralComponent, RoleComponent, SkillsComponent],
+  imports: [CommonModule, FormsModule, StatsComponent, GeneralComponent, RoleComponent, SkillsComponent, WeaponArmorComponent],
   templateUrl: './player-creator.component.html',
   styleUrl: './player-creator.component.css'
 })
