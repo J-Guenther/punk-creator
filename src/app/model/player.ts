@@ -5,6 +5,7 @@ import {Weapon} from "./weapon";
 import {Armor} from "./armor";
 import {Lifepath} from "./lifepath";
 import {CyberwareSlots} from "./cyberwareSlots";
+import {Gear} from "./gear";
 
 export class Player {
 
@@ -55,6 +56,7 @@ export class Player {
   private _ammunition: string = "";
   private _cash: string = "";
   private _cyberwareSlots: CyberwareSlots;
+  private _gear: Gear[] = [];
 
 
   get name(): string {
@@ -327,6 +329,15 @@ export class Player {
 
   set age(value: string) {
     this._age = value;
+  }
+
+
+  get gear(): Gear[] {
+    return this._gear;
+  }
+
+  set gear(value: Gear[]) {
+    this._gear = value;
   }
 
   private updateDerivedStats(abilityChange: { ability: BaseAbility; value: number }) {

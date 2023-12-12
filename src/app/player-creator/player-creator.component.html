@@ -6,16 +6,28 @@
   <app-role [player]="player"></app-role>
 </div>
 
-<div *ngIf="playerStepperService.activeStep === 2" id="stats">
+<div *ngIf="playerStepperService.activeStep === 2" id="lifepath">
+  <app-lifepath [player]="player"></app-lifepath>
+</div>
+
+<div *ngIf="playerStepperService.activeStep === 3" id="stats">
   <app-stats [player]="player"></app-stats>
 </div>
 
-<div *ngIf="playerStepperService.activeStep === 3" id="skills">
+<div *ngIf="playerStepperService.activeStep === 4" id="skills">
   <app-skills [player]="player"></app-skills>
 </div>
 
-<div *ngIf="playerStepperService.activeStep === 4" id="weaponArmor">
+<div *ngIf="playerStepperService.activeStep === 5" id="weaponArmor">
   <app-weapon-armor [player]="player"></app-weapon-armor>
+</div>
+
+<div *ngIf="playerStepperService.activeStep === 6" id="gearList">
+  <app-gear-list [player]="player"></app-gear-list>
+</div>
+
+<div *ngIf="playerStepperService.activeStep === 7" id="fashion">
+  <app-fashion-list [player]="player"></app-fashion-list>
 </div>
 
 

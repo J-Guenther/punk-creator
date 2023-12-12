@@ -13,12 +13,8 @@ export class Lifepath {
   childhoodEnvironment: string = "";
   familyCrisis: string = "";
   lifeGoals: string = "";
-  friends1: string = "";
-  friends2: string = "";
-  friends3: string = "";
-  affairs1: string = "";
-  affairs2: string = "";
-  affairs3: string = "";
-  enemies: Enemy[] = [];
+  friends: string = "";
+  affairs: string = "";
+  enemies: string = "";
 
 }
