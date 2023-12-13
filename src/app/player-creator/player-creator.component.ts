@@ -12,13 +12,14 @@ import {WeaponArmorComponent} from "./weapon-armor/weapon-armor.component";
 import {LifepathComponent} from "./lifepath/lifepath.component";
 import {GearListComponent} from "./gear-list/gear-list.component";
 import {FashionListComponent} from "./fashion-list/fashion-list.component";
+import {CyberwareComponent} from "./cyberware/cyberware.component";
 
 declare var pdfform: any;
 
 @Component({
   selector: 'app-player-creator',
   standalone: true,
-  imports: [CommonModule, FormsModule, StatsComponent, GeneralComponent, RoleComponent, SkillsComponent, WeaponArmorComponent, LifepathComponent, GearListComponent, FashionListComponent],
+  imports: [CommonModule, FormsModule, StatsComponent, GeneralComponent, RoleComponent, SkillsComponent, WeaponArmorComponent, LifepathComponent, GearListComponent, FashionListComponent, CyberwareComponent],
   templateUrl: './player-creator.component.html',
   styleUrl: './player-creator.component.css'
 })

@@ -30,6 +30,10 @@
   <app-fashion-list [player]="player"></app-fashion-list>
 </div>
 
+<div *ngIf="playerStepperService.activeStep === 8" id="cyberware">
+  <app-cyberware [player]="player"></app-cyberware>
+</div>
+
 
 <button *ngIf="playerStepperService.activeStep !== 0" (click)="playerStepperService.previous()">Back</button>
 <button *ngIf="playerStepperService.activeStep < playerStepperService.steps.length - 1" (click)="playerStepperService.next()">Next</button>

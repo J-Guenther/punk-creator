@@ -1,0 +1,110 @@
+<div *ngIf="player">
+  <div>Cyberaudio Suite</div>
+  <div *ngFor="let slot of player.cyberwareSlots.cyberaudioSuite; index as i;">
+    <label [for]="'cyberaudioname' + i">Name</label>
+    <input [id]="'cyberaudioname' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'cyberaudiodata' + i">Data</label>
+    <input [id]="'cyberaudiodata' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Right Cybereye</div>
+  <div *ngFor="let slot of player.cyberwareSlots.rightCybereye; index as i;">
+    <label [for]="'rCybereyeName' + i">Name</label>
+    <input [id]="'rCybereyeName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'rCybereyeData' + i">Data</label>
+    <input [id]="'rCybereyeData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Left Cybereye</div>
+  <div *ngFor="let slot of player.cyberwareSlots.leftCybereye; index as i;">
+    <label [for]="'lCybereyeName' + i">Name</label>
+    <input [id]="'lCybereyeName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'rCybereyeData' + i">Data</label>
+    <input [id]="'rCybereyeData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Right Cyberarm</div>
+  <div *ngFor="let slot of player.cyberwareSlots.rightCyberarm; index as i;">
+    <label [for]="'rCyberarmName' + i">Name</label>
+    <input [id]="'rCyberarmName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'rCyberarmData' + i">Data</label>
+    <input [id]="'rCyberarmData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Left Cyberarm</div>
+  <div *ngFor="let slot of player.cyberwareSlots.leftCyberarm; index as i;">
+    <label [for]="'lCyberarmName' + i">Name</label>
+    <input [id]="'lCyberarmName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'lCyberarmData' + i">Data</label>
+    <input [id]="'lCyberarmData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Neural Link</div>
+  <div *ngFor="let slot of player.cyberwareSlots.neuralLink; index as i;">
+    <label [for]="'neuralLinkName' + i">Name</label>
+    <input [id]="'neuralLinkName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'neuralLinkData' + i">Data</label>
+    <input [id]="'neuralLinkData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Right Cyberleg</div>
+  <div *ngFor="let slot of player.cyberwareSlots.rightCyberleg; index as i;">
+    <label [for]="'rCyberlegName' + i">Name</label>
+    <input [id]="'rCyberlegName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'rCyberlegData' + i">Data</label>
+    <input [id]="'rCyberlegData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Left Cyberleg</div>
+  <div *ngFor="let slot of player.cyberwareSlots.leftCyberleg; index as i;">
+    <label [for]="'lCyberlegName' + i">Name</label>
+    <input [id]="'lCyberlegName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'lCyberlegData' + i">Data</label>
+    <input [id]="'lCyberlegData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Internal Cyberware</div>
+  <div *ngFor="let slot of player.cyberwareSlots.internalCyberware; index as i;">
+    <label [for]="'internalCyberwareName' + i">Name</label>
+    <input [id]="'internalCyberwareName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'internalCyberwareData' + i">Data</label>
+    <input [id]="'internalCyberwareData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>External Cyberware</div>
+  <div *ngFor="let slot of player.cyberwareSlots.externalCyberware; index as i;">
+    <label [for]="'externalCyberwareName' + i">Name</label>
+    <input [id]="'externalCyberwareName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'externalCyberwareData' + i">Data</label>
+    <input [id]="'externalCyberwareData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Fashionware</div>
+  <div *ngFor="let slot of player.cyberwareSlots.fashionware; index as i;">
+    <label [for]="'fashionwareName' + i">Name</label>
+    <input [id]="'fashionwareName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'fashionwareData' + i">Data</label>
+    <input [id]="'fashionwareData' + i" [(ngModel)]="slot.data">
+  </div>
+
+  <div>Borgware</div>
+  <div *ngFor="let slot of player.cyberwareSlots.borgware; index as i;">
+    <label [for]="'borgwareName' + i">Name</label>
+    <input [id]="'borgwareName' + i" [(ngModel)]="slot.name">
+
+    <label [for]="'borgwareData' + i">Data</label>
+    <input [id]="'borgwareData' + i" [(ngModel)]="slot.data">
+  </div>
+
+</div>

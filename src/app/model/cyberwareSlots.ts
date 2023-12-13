@@ -10,7 +10,7 @@ export class CyberwareSlots {
   rightCyberleg: Cyberware[] = [];
   leftCyberleg: Cyberware[] = [];
   internalCyberware: Cyberware[] = [];
-  ExternalCyberware: Cyberware[] = [];
+  externalCyberware: Cyberware[] = [];
   fashionware: Cyberware[] = [];
   borgware: Cyberware[] = [];
 

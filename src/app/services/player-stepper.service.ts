@@ -18,6 +18,7 @@ export class PlayerStepperService {
       {name: "Weapons and Armor", id: "weaponsArmor"},
       {name: "Gear", id: "gearList"},
       {name: "Fashion and Style", id: "fashionList"},
+      {name: "Cyberware", id: "cyberware"},
     ]
   }
 
