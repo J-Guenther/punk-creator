@@ -25,6 +25,7 @@
               "src/assets"
             ],
             "styles": [
+              "src/cyberpunk.css",
               "src/styles.css"
             ],
             "scripts": []

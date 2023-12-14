@@ -1,3 +1,7 @@
-<button *ngFor="let step of playerStepperService.steps; let i = index"
+<section class="cyberpunk black">
+  <ul class="steps">
+    <li *ngFor="let step of playerStepperService.steps; let i = index"
         (click)="playerStepperService.setActiveStep(i)"
-        [ngClass]="{'activeStep': i === playerStepperService.activeStep}">{{step.name}}</button>
+        [ngClass]="{'current': i === playerStepperService.activeStep}">{{step.name}}</li>
+  </ul>
+</section>

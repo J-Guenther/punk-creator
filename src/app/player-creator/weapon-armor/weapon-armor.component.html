@@ -27,8 +27,8 @@
   <input [(ngModel)]="player.bodyArmor.description" id="bodyArmorNotes">
 
   Shield
-  <label for="shieldArmorName">Name</label>
-  <input [(ngModel)]="player.shieldArmor.name" id="shieldArmorName">
+  <label for="shieldArmorName" class="cyberpunk">Name</label>
+  <input [(ngModel)]="player.shieldArmor.name" id="shieldArmorName" class="cyberpunk" type="text">
 
   <label for="shieldArmorPenalty">Penalty</label>
   <input [(ngModel)]="player.shieldArmor.penalty" id="shieldArmorPenalty">
@@ -38,5 +38,23 @@
 
   <label for="shieldArmorNotes">Notes</label>
   <input [(ngModel)]="player.shieldArmor.description" id="shieldArmorNotes">
+
+  <div>Weapons</div>
+  <div *ngFor="let weapon of player.weapons; index as i;">
+    <label [for]="'weaponName' + i">Weapon</label>
+    <input [id]="'weaponName' + i" [(ngModel)]="weapon.weaponType">
+
+    <label [for]="'dmg' + i">DMG</label>
+    <input [id]="'dmg' + i" [(ngModel)]="weapon.damage">
+
+    <label [for]="'ammo' + i">Ammo</label>
+    <input [id]="'ammo' + i" [(ngModel)]="weapon.magazine">
+
+    <label [for]="'rof' + i">ROF</label>
+    <input [id]="'rof' + i" [(ngModel)]="weapon.rof">
+
+    <label [for]="'notes' + i">Notes</label>
+    <input [id]="'notes' + i" [(ngModel)]="weapon.notes">
+  </div>
 </div>
 
